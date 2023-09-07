@@ -105,7 +105,7 @@ let ccKendaraan = 1200;
 let jenisPlat = "kuning";
 
 const jenisBahanBakar =
-  jenisKendaraan == /mobil/i
+  jenisKendaraanPengguna == /mobil/i
     ? jenisPlat == "kuning"
       ? "BBM subsidi"
       : ccKendaraan >= 1500
