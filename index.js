@@ -98,7 +98,6 @@ console.log(`Air Dalam Keadaan : ${kondisiAir}`);
   }
 })();
 
-
 // pertamina code Wisnu
 let jenisKendaraanPengguna = "Mobil";
 let ccKendaraan = 1200;
@@ -115,7 +114,7 @@ const jenisBahanBakar =
 
 console.log(jenisBahanBakar);
 
-//suhu code fahrul 
+//suhu code fahrul
 
 let suhuAir = 50;
 
@@ -130,7 +129,22 @@ function tentukanKondisiAir(suhu) {
     return "Tidak Terdefinisi";
   }
 }
-let kondisiAir = tentukanKondisiAir(suhuAir);
+let kondisiAir1 = tentukanKondisiAir(suhuAir);
 
 console.log(`Suhu air: ${suhuAir}°C`);
 console.log(`Kondisi air: ${kondisiAir}`);
+
+// kodingan suhu adit
+const air = 999;
+let kondisi = "";
+if (air >= -100 && air <= 0) {
+  kondisi = "Beku";
+} else if (air >= 1 && air <= 100) {
+  kondisi = "Cair";
+} else if (air >= 101 && air <= 500) {
+  kondisi = "Uap";
+} else {
+  kondisi = "Tidak Terdefinisi";
+}
+
+console.log(kondisi);
