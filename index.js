@@ -1,4 +1,4 @@
-// initial code
+// update code
 const arr = ["A", "B", "C"];
 
 for (let x in arr) {
