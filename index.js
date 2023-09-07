@@ -115,3 +115,22 @@ const jenisBahanBakar =
 
 console.log(jenisBahanBakar);
 
+//suhu code fahrul 
+
+let suhuAir = 50;
+
+function tentukanKondisiAir(suhu) {
+  if (suhu >= -100 && suhu <= 0) {
+    return "Beku";
+  } else if (suhu >= 1 && suhu <= 100) {
+    return "Cair";
+  } else if (suhu >= 101 && suhu <= 500) {
+    return "Uap";
+  } else {
+    return "Tidak Terdefinisi";
+  }
+}
+let kondisiAir = tentukanKondisiAir(suhuAir);
+
+console.log(`Suhu air: ${suhuAir}°C`);
+console.log(`Kondisi air: ${kondisiAir}`);
