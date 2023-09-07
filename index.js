@@ -97,3 +97,21 @@ console.log(`Air Dalam Keadaan : ${kondisiAir}`);
     });
   }
 })();
+
+
+// pertamina code Wisnu
+let jenisKendaraanPengguna = "Mobil";
+let ccKendaraan = 1200;
+let jenisPlat = "kuning";
+
+const jenisBahanBakar =
+  jenisKendaraan == /mobil/i
+    ? jenisPlat == "kuning"
+      ? "BBM subsidi"
+      : ccKendaraan >= 1500
+      ? "Pertamax Turbo"
+      : "Pertamax"
+    : "BBM Subsidi";
+
+console.log(jenisBahanBakar);
+
